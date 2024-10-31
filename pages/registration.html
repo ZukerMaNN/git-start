@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="wallpaper"></div>
+    <div class="backwall"></div>
+    <div class="container">
+        <header class="header">
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item"><a class="navbar-link" href="../index.html">General</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="articles.html">Articles</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="catalog.html">Catalog</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="contacts.html">Contacs</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="gallery.html">Gallery</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="page-nav.html">Navigation</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="registration.html">Registration</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="content container">
+        <h1>Registration</h1>
+        <form action="https://tests.fomenko.top/echo/index.php" method="GET">
+            <fieldset class="form-style">
+                <legend>Personal data</legend>
+                <div class="form-group">
+                    <label class="label-form" for="name">Full name</label>
+                    <input class="input-name" name="name" id="name" type="text" required placeholder="Full name">
+                </div>
+                <div class="form-group">
+                    <label class="label-form" for="photo">Add foto</label>
+                    <input name="photo" id="photo" type="file">
+                </div>
+                <div class="form-group">
+                    <label class="label-form" for="email">Email</label>
+                    <input name="email" id="email" type="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label class="label-form" for="password">Password</label>
+                    <input name="password" id="password" type="password" required placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label class="label-form" for="site">Site address</label>
+                    <input name="site" id="site" type="text" value="mysite.name">
+                </div>
+                <div class="form-group">
+                    <div class="label-form">
+                        Your gender
+                    </div>
+                </div>
+                <div class="form-group-sm">
+                    <input name="gender" value="male" id="male" type="radio">
+                    <label for="male">Mann</label>
+                </div>
+                <div class="form-group-sm">
+                    <input name="gender" value="female" id="female" type="radio">
+                    <label for="female">Girl</label>
+                </div>
+                <div class="form-group">
+                    <label class="label-form" for="date">Date of birth</label>
+                    <input name="b-day" id="date" type="date">
+                </div>
+                <div class="form-group">
+                    <div class="label-form">
+                        Choose your kitchen
+                    </div>
+                </div>
+                <div class="form-group-sm">
+                    <div class="checkbox">
+                        <input type="checkbox" name="kit" id="ua-kit" value="ua">
+                        <label for="ua-kit">Ukrainian
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group-sm">
+                    <div class="checkbox">
+                        <input type="checkbox" name="kit" id="fr-kit" value="fr">
+                        <label for="fr-kit">French</label>
+                    </div>
+                </div>
+                <div class="form-group-sm">
+                    <div class="checkbox">
+                        <input type="checkbox" name="kit" id="it-kit" value="it">
+                        <label for="it-kit">Italian</label>
+                    </div>
+                </div>
+                <div class="form-group-sm">
+                    <div class="checkbox">
+                        <input type="checkbox" name="kit" id="cn-kit" value="cn">
+                        <label for="cn-kit">China</label>
+                    </div>
+                </div>
+                <div class="form-group-sm">
+                    <div class="checkbox">
+                        <input type="checkbox" name="kit" id="us-kit" value="us">
+                        <label for="us-kit">American</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="label-form" for="txt">About myself</label>
+                    <textarea name="txt" id="txt" cols="10" rows="2" placeholder="about myself"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-style">
+                <legend>Form control buttons</legend>
+                <div class="form-group">
+                    <button class="btn" type="submit">Registration</button>
+                </div>
+                <div class="form-group">
+                    <button class="btn" type="reset">Reset</button>
+                </div>
+            </fieldset>
+        </form>
+
+        <footer>
+            <p>&copy;</p>
+        </footer>
+    </div>
+</body>
+
+</html>
