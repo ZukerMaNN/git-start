@@ -33,11 +33,8 @@ fieldset {
 }
 
 .container {
-  max-width: 1280px;
-  padding: 20px;
-  margin: auto;
-  align-items: center;
-  justify-content: center;
+  width: min(100% - 40px, 1200px);
+  margin-inline: auto;
 }
 
 .wallpaper {
@@ -70,7 +67,7 @@ fieldset {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
+  display: contents;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
